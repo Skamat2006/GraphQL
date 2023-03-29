@@ -1,0 +1,89 @@
+body {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  /* background: linear-gradient(90deg, #00dbde, #fc00ff); */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.item1 {
+  grid-area: header;
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: "Courier New", Courier, monospace;
+  /* color: black; */
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  background-color: white;
+  opacity: 0.4;
+}
+.item2 {
+  grid-area: profile;
+  background-color: white;
+  opacity: 0.5;
+}
+.item3 {
+  grid-area: pie;
+  padding: 5px 5px 5px 5px;
+  height: max-content;
+  color: darkslategray;
+  text-align: center;
+  background-color: white;
+  opacity: 0.8;
+}
+
+.item4 {
+  background-color: white;
+  opacity: 0.5;
+  grid-area: projects;
+  justify-content: left;
+  /* position: relative; */
+  /* overflow-y: scroll; */
+  /* height: 10px; */
+}
+.item5 {
+  grid-area: bar;
+  background-color: white;
+  opacity: 0.8;
+  color: darkslategray;
+  text-align: center;
+}
+
+.item6 {
+  grid-area: totalxp;
+  background-color: white;
+  opacity: 0.5;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.75fr 0.75fr 0.75fr;
+  grid-template-areas:
+    "header header header"
+    "profile pie bar"
+    "totalxp pie bar"
+    "projects pie bar";
+  gap: 10px;
+  background: linear-gradient(90deg, #00dbde, #fc00ff);
+  padding: 10px 10px 10px 10px;
+  /* height: fit-content; */
+}
+
+.grid-container > div {
+  padding: 10px 10px 10px 10px;
+  height: min-content;
+}
+
+.pieslice {
+  transition: all(250ms);
+}
+
+.pieslice:hover {
+  transform: translate(0) scale(1.1);
+}

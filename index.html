@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <link rel="shortcut icon" href="./assets/graphql-icon.svg" />
+    <title>GraphQL</title>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item item1">Welcome to GraphQL</div>
+      <div class="grid-item item2" id="user-profile">
+        <h2>User Profile</h2>
+      </div>
+      <div class="grid-item item3" id="projects-by-xp">
+        <h2>Projects XP</h2>
+        <h4 class="projectName"></h4>
+        <h4 class="projectXP"></h4>
+        <!-- <h4 class="projectGrade"></h4> -->
+        <div id="xp" class="user-info"></div>
+      </div>
+      <div class="grid-item item6">
+        <h2>XP POINTS</h2>
+        <span class="profileTotalXp"></span>
+      </div>
+      <div class="grid-item item4" id="completed-projects">
+        <h2>Projects Completed</h2>
+      </div>
+      <div class="grid-item item5" id="skill-bar-graph">
+        <h2>Technical Skills</h2>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
